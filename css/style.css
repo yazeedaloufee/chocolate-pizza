@@ -1,10 +1,12 @@
-
+*{
+    box-sizing: border-box;
+}
 header div {
     display: inline-block;
 }
 
 header div:nth-of-type(2){
-    margin-left: 50%;
+    margin-left: 40%;
 }
 header div h2{
     font-family:yellowtail;
@@ -30,13 +32,13 @@ main section:nth-of-type(1) p{
 display: inline-block
 }
 main section:nth-of-type(1) img
-{margin-left: 63%;}
+{margin-left: 56%;}
 main div:nth-of-type(1){
     margin-top:0px;
 }
 body{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 main section:nth-of-type(2){
     color: gray;
@@ -44,7 +46,7 @@ main section:nth-of-type(2){
 
 }
 main section:nth-of-type(3){
-    background-image: url("list-bg.png");}
+    }
     main section:nth-of-type(3) img{
         z-index: -1;
         float: left;
@@ -53,6 +55,9 @@ main section:nth-of-type(3){
     }
     form{
         z-index: 0;
+        background-image: url("list-bg.png");
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
 ul{
@@ -66,8 +71,9 @@ ul{
 main{
     margin-top: 8%
 }
-main img{
+main section:nth-of-type(2) img{
     margin-top: 15px;
+    width: 100%;
 }
 ul:nth-of-type(1){
     margin-left: 40px;
@@ -75,18 +81,31 @@ ul:nth-of-type(1){
 ul:nth-of-type(2){
     margin-left: 40%;
 }
-
-
-
-footer div:nth-of-type(1){
-    
+footer section:first-of-type div{
     display: inline-block;
-    clear: both;
-   
-    color: gray;
-    height: 60px;
-    margin-top: -60px;
+    padding: 0px;
+    vertical-align: middle;
+    height: 100px;
 }
+
+
+
+footer section:first-of-type div:nth-of-type(1){
+    clear: both;
+    color: gray;
+    width: 9%;
+}
+footer section:first-of-type div:nth-of-type(2){
+    width: 69%;
+
+}
+footer section:first-of-type div:nth-of-type(3){
+    width: 20%;
+    vertical-align: middle;
+    padding-top: 40px;
+
+}
+
 h3{
     font-size: 20px;
     margin-bottom: 25px;
@@ -108,7 +127,13 @@ footer p{
     color: gray;
 
 }
-footer p:nth-of-type(1){
+footer section:nth-of-type(1) p:first-of-type{
+    text-align: left;
+    color: gray;
+
+}
+
+footer section:nth-of-type(1) p:nth-of-type(1){
     margin-top: 25px;
     
 }
@@ -117,6 +142,14 @@ footer{
     
     margin-top: 25px;
 
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: tomato;
+    padding: 19px;
+    
 }
 
 
